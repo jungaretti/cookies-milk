@@ -8,18 +8,28 @@
     <meta name="description" content="Cookies n' Milk!" />
 
     <style>
+      .base {
+        background-color: #ce4257;
+      }
+      .alternate {
+        background-color: #fdb833;
+      }
       #cookies-milk {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 600px;
-        max-width: 90vw;
+        max-width: 95vw;
       }
     </style>
   </head>
 
-  <body>
+  <body class="base">
     <img id="cookies-milk" src="img/cookies-milk.png" />
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+      setInterval(function() {
+        document.body.classList.toggle("alternate");
+      }, 1000);
+    </script>
   </body>
 </html>
