@@ -14,33 +14,31 @@
       .alternate {
         background-color: #fdb833;
       }
-      #title {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 600px;
-        max-width: 95vw;
-      }      
-      #cookies-milk {
+      .banner {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 500px;
         max-width: 95vw;
       }
+      #title,
+      #detail {
+        text-align: center;
+      }
     </style>
   </head>
 
   <body class="base">
-    <img id="title" src="img/title.png" />
-    <img id="cookies-milk" src="img/cookies-milk.png" />
-    <h2>
-      These heros are an interdimensional duo of epic proportions.
-    </h2>
-    <br>
-    <h4>
-      Follow them as they dance across the 5th dimension!
-    </h4> 
+    <main>
+      <img class="banner" src="img/title.png" />
+      <img class="banner" src="img/cookies-milk.png" />
+      <h2 id="title">
+        These heros are an interdimensional duo of epic proportions.
+      </h2>
+      <h4 id="detail">
+        Follow them as they dance across the 5th dimension!
+      </h4>
+    </main>
     <script type="text/javascript">
       setInterval(function() {
         document.body.classList.toggle("alternate");
